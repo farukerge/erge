@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .box-shadow {
+        box-shadow: inset 0 -12px 0 skyblue;
+    }
+
+    .text-box {
+        @apply text-center flex flex-col mx-auto justify-center items-center px-5 lg:px-0;
+    }
+
+    .inner-container {
+        @apply container mx-auto;
+    }
+
+    .card {
+        @apply flex flex-col bg-slate-200 p-4 rounded-lg;
+    }
+
+    .card-grid {
+        @apply lg:grid lg:grid-cols-4 lg:gap-4 grid gap-4 px-5;
+    }
+
+}
+
+@layer base {
+    h1 {
+        @apply text-2xl lg:text-4xl box-shadow w-fit;
+    }
+
+    ;
+
+    h2 {
+        @apply text-lg lg:text-2xl box-shadow w-fit;
+    }
+
+    ;
+
+    h3 {
+        @apply mt-4 font-medium decoration-sky-700 underline decoration-solid decoration-2;
+    }
+}
+
+;
